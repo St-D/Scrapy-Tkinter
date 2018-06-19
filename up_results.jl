@@ -1,0 +1,10 @@
+{"crawl_date": "31.05.2018", "level": "Expert ($$$)", "name_project": "Develop web: food wikipedia (v1, CMS needed)", "price": "$7,500", "show_status": true, "url_to_project": "/o/jobs/job/_~01ea1c470b76763ca3/"}
+{"crawl_date": "31.05.2018", "level": "Intermediate ($$)", "name_project": "Windows software developer", "show_status": true, "url_to_project": "/o/jobs/job/_~0161411e92002b4c82/"}
+{"crawl_date": "31.05.2018", "level": "Intermediate ($$)", "name_project": "Tableau developer", "show_status": true, "url_to_project": "/o/jobs/job/_~013c70e0a1cc539ba4/"}
+{"crawl_date": "31.05.2018", "level": "Intermediate ($$)", "name_project": "JavaScript and Python Web Developer for our company", "show_status": true, "url_to_project": "/o/jobs/job/_~016729fd71ed33f86f/"}
+{"crawl_date": "31.05.2018", "level": "Expert ($$$)", "name_project": "Desktop / Mobile software development working with YII FRAMEWORK", "price": "$200", "show_status": true, "url_to_project": "/o/jobs/job/_~014d4d84e47a2a46e9/"}
+{"crawl_date": "31.05.2018", "level": "Intermediate ($$)", "name_project": "Python programmer required", "price": "$20", "show_status": true, "url_to_project": "/o/jobs/job/_~011c9f9b36e279af04/"}
+{"crawl_date": "31.05.2018", "level": "Intermediate ($$)", "name_project": "Web development and data visualization", "show_status": true, "url_to_project": "/o/jobs/job/_~01351657656ebd6e4a/"}
+{"crawl_date": "31.05.2018", "level": "Intermediate ($$)", "name_project": "Urgent Requirement - Specific tasks and modules to be completed", "price": "$690", "show_status": true, "url_to_project": "/o/jobs/job/_~01aabf4e03763838e6/"}
+{"crawl_date": "31.05.2018", "level": "Intermediate ($$)", "name_project": "Looking for a machine learning expert who can create a program", "show_status": true, "url_to_project": "/o/jobs/job/_~01a4e0d67e05af50e8/"}
+{"crawl_date": "31.05.2018", "level": "Entry Level ($)", "name_project": "I'm looking for a Middle Python developer.", "show_status": true, "url_to_project": "/o/jobs/job/_~0121aa5b04f832c399/"}
