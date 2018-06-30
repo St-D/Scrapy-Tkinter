@@ -6,14 +6,12 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 import json
-from up_w.spiders.tst_spider import time_now
-# from up_w import winTKInter
-from up_w.settings import FILE_RESULT
+from up_work_spider.settings import FILE_RESULT, BOT_NAME
 
 
 class JsonWriterPipeline(object):
 
-    result_file = FILE_RESULT
+    result_file = BOT_NAME + '/' + FILE_RESULT
 
     def open_spider(self, spider):
 
@@ -35,10 +33,10 @@ class JsonWriterPipeline(object):
 
         json_obj = dict(item)
 
-        #add rows that are not in the id_list
+        # add rows that are not in the id_list
         if json_obj.get('url_to_project') not in list(set(self.id_list)):
             line = json.dumps(json_obj, sort_keys=True) + "\n"
             self.file.write(line)
 
     def close_spider(self, spider):
-        self.file.close() # close after crawl
+        self.file.close()  # close after crawl

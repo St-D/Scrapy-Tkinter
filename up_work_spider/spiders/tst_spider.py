@@ -10,7 +10,7 @@
 
 import scrapy
 from scrapy.loader import ItemLoader
-from up_w.items import ScrapTstLoader
+from up_work_spider.items import ScrapTstLoader
 
 from scrapy.loader.processors import TakeFirst, MapCompose, Join
 

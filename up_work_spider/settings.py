@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for up_w project
+# Scrapy settings for up_work_spider project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,19 +9,19 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'up_w'
+BOT_NAME = 'up_work_spider'
 
-SPIDER_MODULES = ['up_w.spiders']
-NEWSPIDER_MODULE = 'up_w.spiders'
+SPIDER_MODULES = ['up_work_spider.spiders']
+NEWSPIDER_MODULE = 'up_work_spider.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'up_w (+http://www.yourdomain.com)'
+#USER_AGENT = 'up_work_spider (+http://www.yourdomain.com)'
 # USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36'
 # USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
 # USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36 OPR/52.0.2871.64'
 # USER_AGENT = 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)'
-USER_AGENT = 'up_w (+http://www.yourdomain.com)'
+USER_AGENT = 'up_work_spider (+http://www.yourdomain.com)'
 USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
 USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0'
 
@@ -36,7 +36,7 @@ ROBOTSTXT_OBEY = True
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 3 # default = 3
+DOWNLOAD_DELAY = 3  #  default = 3
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -56,13 +56,13 @@ DOWNLOAD_DELAY = 3 # default = 3
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'up_w.middlewares.UpWSpiderMiddleware': 543,
+#    'up_work_spider.middlewares.UpWSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'up_w.middlewares.UpWDownloaderMiddleware': 543,
+#    'up_work_spider.middlewares.UpWDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -74,8 +74,8 @@ DOWNLOAD_DELAY = 3 # default = 3
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   # 'up_w.pipelines.UpWPipeline': 300,
-   'up_w.pipelines.JsonWriterPipeline': 300,
+   # 'up_work_spider.pipelines.UpWPipeline': 300,
+   'up_work_spider.pipelines.JsonWriterPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -102,7 +102,7 @@ ITEM_PIPELINES = {
 FEED_EXPORT_ENCODING = 'utf-8'
 FILE_RESULT = 'up_results.jl'
 USER_AGENT_LIST = [
-                     'up_w (+http://www.yourdomain.com)',
+                     'up_work_spider (+http://www.yourdomain.com)',
                      'Mozilla/5.0 (Windows NT 6.1; WOW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
                      'Mozilla/5.0 (X11; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0',
                   ]

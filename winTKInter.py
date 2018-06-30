@@ -2,13 +2,21 @@
 # Python 3.x.x
 #
 
-
 import os
+
+try:
+    import scrapy
+except ImportError:
+    os.system(' pip install ' + "Scrapy")
+    print('[!] Error importing Scrapy ... Scrapy pip installer')
+    import scrapy
+
+
 import tkinter as tk
 import json
 from sys import path
-path.append('../../up_w')
-from settings import FILE_RESULT, USER_AGENT_LIST
+# path.append('../../up_w')
+from up_work_spider.settings import FILE_RESULT, USER_AGENT_LIST, BOT_NAME
 
 
 class WinUpwork(tk.Frame):
@@ -99,6 +107,7 @@ def start_spider():
     os.system('scrapy crawl tst')
     # pass
 
+
 def main():
     # root.title('upwork.com')
     root = tk.Tk()
@@ -107,7 +116,8 @@ def main():
     root.resizable(False, False)  # Горизонталь, Вертикаль
 
     app = WinUpwork(root)
-    with open(file=FILE_RESULT, mode='r') as res_file:
+    # with open(file=FILE_RESULT, mode='r') as res_file:
+    with open(file=BOT_NAME + '/' + FILE_RESULT, mode='r') as res_file:
         # head = [next(res_file) for x in range(6)]
         for line in res_file.readlines():
             j_dict = json.loads(line)
